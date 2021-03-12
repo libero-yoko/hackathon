@@ -1,8 +1,8 @@
 {
-  "name": "Sample",
+  "name": "Nekko Neko Filter",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "Sample Chrome Extension",
+  "description": "Converts text 'cat' into image cat",
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*" ],
     "js": [
@@ -11,5 +11,19 @@
     "web_accessible_resources": [
       "meow.mp3"
     ]
-  }]
+  }],
+  "permissions" : [
+    "storage"
+  ],
+  "options_ui" : {
+    "page": "options.html",
+    "open_in_tab": false
+  },  
+  "browser_action": {
+    "default_icon": {
+      "16": "cat-icon.png",
+      "32": "cat-icon.png"
+    }, 
+    "default_popup": "popup.html"
+  }
 }

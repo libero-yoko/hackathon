@@ -1,0 +1,18 @@
+body {
+  width:300px;
+  height:auto;
+  padding: 10px 30px 30px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 13pt;
+}
+
+button {
+  background-color:pink;
+  border:none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.spacer{
+  height: 20px;
+}

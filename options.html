@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head><title>Extension Options</title></head>
 <body>
 
-<audio id="myAudio">
+  Favorite cat:
+  <select id="cat">
+   <option value="ame">Ame</option>
+   <option value="yuki">Yuki</option>
+   <option value="mochi">Mochi</option>
+   <option value="mr_poe">Mr. Poe</option>
+  </select>
+  
+  <label>
+    <input type="checkbox" id="like">
+    I like dogs too.
+  </label>
+  
+  <div id="status"></div>
+  <button id="save">Save</button>
+  
+  <script src="options.js"></script>  
+
+<!-- <audio id="myAudio">
   <source src="meow.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
@@ -22,7 +41,7 @@ function playAudio() {
 function pauseAudio() { 
   x.pause(); 
 } 
-</script>
+</script> -->
 
 </body>
 </html>

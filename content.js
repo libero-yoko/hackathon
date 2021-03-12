@@ -14,7 +14,7 @@
 // document.getElementsByTagName("p").innerText;
 const cat1 = document.querySelectorAll('p, header, head, h1, h2, h3, li, ul, caption, span, title');
 console.log(cat1.length)
-
+var catCount = 0;
 
 for (let i = 0; i < cat1.length; i++) {
     if(cat1[i].innerHTML.includes(" cat ")){
@@ -26,11 +26,12 @@ for (let i = 0; i < cat1.length; i++) {
     
     // cat1[i].innerHTML = cat1[i].innerHTML.replace(/cat/gi, catImg)
     if(!cat1[i].innerHTML.includes("http")){
+      if(cat1[i].innerHTML.includes("cat")) catCount += 1;
       cat1[i].innerHTML = cat1[i].innerHTML.replace(/cat/gi, "<img src='http://studio-libero.com/img/cat.png' height ='20' style='padding-top:7px'>")
     }
 }
 
-
+alert("Kitty power: " + catCount);
 
 
 // {/* <p id="demo">   This element has extra spacing     and contains <span>a span element</span>.</p>
